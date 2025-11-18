@@ -40,6 +40,7 @@ $ hat(chi)_A (x) = cases(1 & quad x in A, bot & quad x in.not A) $
 $<=>$ $A$ ist rekursiv aufzählbar $<=>$ $exists f in P: d o m(f) "/" i m g (f) = A$
 
 === Reduktion
+*Anforderung:* $f$ ist total und berechenbar.
 $ A <= B <=> (forall x in NN: x in A <=> f(x) in B) $
 "$A$ auf $B$ reduzierbar, $f$ die Reduktion von $A$ auf $B$"
 - reflexiv ($A <= A$), transitiv, *aber nicht*: total, antisymmetrisch
@@ -50,7 +51,8 @@ Ist $B$ semi-/entscheidbar, dann auch $A$.
 
 - $A_0$ ist *schwer* für $X$: $forall A in X: A <= A_0$
 - $A_0$ ist *vollständig* für $X$: $"schwer" + A_0 in X$
-$=>$ $H_e$ ist RE-vollständig
+$=>$ $H_e$ ist RE-vollständig, $overline(H)_e$ ist co-RE-vollständig \
+Wenn ein Element in RE ist, dann muss es $<=$ des schweren oder vollständigen Elements von $X$ sein.
 
 === $s_m^n$ Theorem
 
@@ -107,4 +109,12 @@ Jede nicht-triviale Indexmenge ist nicht entscheidbar.
   mit $P$ ein Prädikat, $P: NN -> {0,1}$ #v(0.1em)
   Sei $A <= B$, dann gilt \
   $B in Sigma_n "/" Pi_n "/" Delta_n => A in Sigma_n "/" Pi_n "/" Delta_n$ \
+]
+
+=== Bereits bewiesen
+$H <= H_e, H_e <= T, overline(H)_e <= T, T lt.eq.not H_e, T lt.eq.not overline(H)_e $
+
+#box(fill: rgb("#FF000013"), radius: 5pt, inset: 5pt, stroke: red + 0.5pt)[
+==== Tipp
+Aufgaben nicht immer in der vorgegebenen Reihenfolge bearbeiten, sondern so, dass man aus der einen Aufgabe die andere schlussfolgern kann.
 ]
